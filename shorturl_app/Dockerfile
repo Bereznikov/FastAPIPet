@@ -5,7 +5,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY shorturl_app .
+COPY . .
 
 # Объявляем том для хранения базы данных
 VOLUME ["/app/data"]
